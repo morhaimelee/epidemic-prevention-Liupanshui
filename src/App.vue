@@ -3,7 +3,7 @@
     <div id="all-window">
       <div id="nav">
         <div class="location">
-          <i></i>贵阳市
+          <i></i>六盘水市
         </div>
         <div class="calendar">
           <div class="time">{{nowTime}}</div>
@@ -30,7 +30,7 @@
       </div>
       <!-- 人数展示结束 -->
       <div class="title-text">
-        <i></i>贵阳数据
+        <i></i>六盘水数据
       </div>
       <div id="deadline">截止{{dataList.deadline.deadline_date}} {{dataList.deadline.deadline_time}} 全市数据统计</div>
       <div class="guiyang_data">
@@ -66,7 +66,7 @@
           </li>
         </ul>
       </div>
-      <!-- 贵阳公开数据结束 -->
+      <!-- 六盘水公开数据结束 -->
       <div class="title-text" id="drug">
         <i></i>药品，物资消耗折线图
       </div>
@@ -134,12 +134,12 @@
 
 <script>
 import echarts from "echarts";
-import JSON from "./assets/520100.json";
+import JSON from "./assets/520200";
 import axios from "axios";
-document.title = "贵阳市疫情监控平台"
+document.title = "六盘水疫情防控指挥调度平台"
 
 export default {
-  name: "guiyangyiqing",
+  name: "liupanshuiyiqing",
   props: {},
   data() {
     return {
@@ -234,7 +234,7 @@ export default {
         },
         geo: {
           // 设置地图的显示信息
-          map: "贵阳", // 注意  哪个区域的就显示哪个区域的名称
+          map: "六盘水", // 注意  哪个区域的就显示哪个区域的名称
           label: {
             normal: {
               // 设置字体相关信息
@@ -268,7 +268,7 @@ export default {
         series: [
           {
             // 地图块的相关信息
-            name: "贵州疫情监控",
+            name: "疫情监控",
             type: "map",
             geoIndex: 0, // 不可缺少，否则无tooltip 指示效果
             zoom: 1,
@@ -385,7 +385,7 @@ export default {
     },
     runEchartsmap() {
       this.echartObj = echarts.init(document.getElementById(this.id));
-      echarts.registerMap("贵阳", JSON);
+      echarts.registerMap("六盘水", JSON);
       let that = this
       axios.get("/js/data.json").then(
         response => {

@@ -5,7 +5,7 @@
     "suspect_person": 10
   },
   "openData": {
-    "openPatients": ["7", "3", "1"],
+    "openPatients": ["5", "2", "1"],
     "openCompare": ["2", "1", "1"]
   },
   "sampleData": {
@@ -68,44 +68,20 @@
   },
   "map_data_person": [
     {
-      "name": "南明区",
+      "name": "六枝特区",
       "value": 3
     },
     {
-      "name": "云岩区",
+      "name": "盘州市",
       "value": 2
     },
     {
-      "name": "观山湖区",
+      "name": "水城县",
       "value": 6
     },
     {
-      "name": "息烽县",
+      "name": "钟山区",
       "value": 1
-    },
-    {
-      "name": "开阳县",
-      "value": 1
-    },
-    {
-      "name": "修文县",
-      "value": 3
-    },
-    {
-      "name": "乌当区",
-      "value": 1
-    },
-    {
-      "name": "白云区",
-      "value": 0
-    },
-    {
-      "name": "清镇市",
-      "value": 1
-    },
-    {
-      "name": "花溪区",
-      "value": 10
     }
   ]
 }
