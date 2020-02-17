@@ -69,19 +69,23 @@
   "map_data_person": [
     {
       "name": "六枝特区",
-      "value": 3
+      "value": 0
     },
     {
       "name": "盘州市",
-      "value": 2
+      "value": 8
     },
     {
       "name": "水城县",
-      "value": 6
+      "value": 0
     },
     {
       "name": "钟山区",
-      "value": 1
+      "value": 2
     }
-  ]
+  ],
+  "visualMap": {
+    "max": 5,
+    "text": ["5", "0"]
+  }
 }

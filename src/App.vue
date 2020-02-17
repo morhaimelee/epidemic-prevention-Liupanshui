@@ -215,10 +215,10 @@ export default {
         visualMap: {
           // 设置地图范围值显示的颜色
           min: 0,
-          max: 20,
+          max: 10,
           right: '130',
           bottom: '70',
-          text: ['20','0'],
+          text: [],
           // show: false,
           // splitNumber: 5,
           inRange: {
@@ -391,6 +391,8 @@ export default {
         response => {
           // console.log(response.data);
           this.option.series[0].data = response.data.map_data_person;
+          this.option.visualMap.max = response.data.visualMap.max
+          this.option.visualMap.text = response.data.visualMap.text
           // options1.series[0].data = response.data.medicinal.medicine_dataNum;
           // options1.series[1].data = response.data.medicinal.supplies_dataNum;
           that.echartObj.setOption(this.getOptions(), true);

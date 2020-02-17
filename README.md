@@ -103,6 +103,10 @@
 	共有10个区县，顺序无特定要求，范围0-20
 
 
+##### visualMap -- 中部地图最大值配置
+  max\text都需要配置,text为数组
+
+  
 ## Project setup
 ```
 npm install
